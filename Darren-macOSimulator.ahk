@@ -22,37 +22,6 @@ $CapsLock::
     Return
 }
 
-; $LShift::
-; {
-;     ; 禁用左 Shift 的單擊功能，但保留組合鍵使用
-;     if !KeyWait("LShift", "T0.03") {
-;         ; 如果超過 0.03 秒，允許作為組合鍵使用
-;         Send("{LShift Down}")
-;         KeyWait("LShift")  ; 等待直到 LShift 釋放
-;         Send("{Space}")
-;         sleep 150
-;         Send("{Space}")
-;         Send("{LShift Up}")
-;     }
-;     ; 如果是短按，不做任何操作
-;     Return
-; }
-
-; $RShift::
-; {
-;     ; 禁用右 Shift 的單擊功能，但保留組合鍵使用
-;     if !KeyWait("RShift", "T0.03") {
-;         ; 如果超過 0.03 秒，允許作為組合鍵使用
-;         Send("{RShift Down}")
-;         KeyWait("RShift")  ; 等待直到 RShift 釋放
-;         Send("{Space}")
-;         sleep 150
-;         Send("{Space}")
-;         Send("{RShift Up}")
-;     }
-;     ; 如果是短按，不做任何操作
-;     Return
-; }
 
 $+CapsLock::  
 {
@@ -73,6 +42,8 @@ $+CapsLock::
 !d::Send("#d")  ; 將 Alt+D 設置為切換到桌面，此處用 Win+D 實現
 !s::Send("^s")  ; 將 Alt+S 設置為保存
 !f::Send("^f")  ; 將 Alt+F 設置為全域搜尋
+!m::WinMinimize("A") ; 按下 Alt + M 缩小当前活动窗口
+
 
 
 !x::Send("^x")  ; 將 Alt+X 設置為剪切
@@ -103,6 +74,11 @@ $+CapsLock::
 +!Right::Send("+{End}")
 
 
+; 按下 Alt + 向上键，跳至最上方
+!Up::Send("^{Home}")
+
+; 按下 Alt + 向下键，跳至最下方
+!Down::Send("^{End}")
 
 
 
@@ -134,12 +110,6 @@ $+CapsLock::
 
 
 
-
-
-
-
-
-
 ;模擬MacOS，打字時shift+,，可以是全形的逗號
 ; 將左側的 Shift + ',' 改為輸出 '，'
 <+SC033::Send("，")
@@ -162,7 +132,6 @@ $+CapsLock::
     Send("{Ctrl Up}")
     Return
 }
-
 
 
 
