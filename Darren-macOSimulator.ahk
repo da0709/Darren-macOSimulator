@@ -14,7 +14,7 @@ $CapsLock::
             SetCapsLockState("Off")
     }
     else {
-        ; 短按，模擬 Shift 鍵單擊(切換語言)
+        ; 短按，模擬macOS Caps Lock鍵單擊(切換語言)
         Send("{RShift Down}")
         Send("{RShift Up}")
         SetCapsLockState("Off")
