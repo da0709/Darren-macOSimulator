@@ -13,5 +13,4 @@ Darren-macOSimulator is an AutoHotkey script that simulates macOS shortcuts on a
 - Easy to customize and extend
 
 ## Usage
-1. Download the zip file with the executable.
-2. Alternatively, download and install AutoHotkey, then run the provided script to use macOS shortcuts on your Windows computer.
+Download [the zip file with the executable](https://github.com/da0709/Darren-macOSimulator/releases/download/v4.0/Darren-macOSimulator-4.0.exe.zip)
