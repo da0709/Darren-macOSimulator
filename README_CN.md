@@ -11,4 +11,4 @@ Darren-macOSimulator 是一個 AutoHotkey 腳本，可以在 Windows 環境中�
 - 易於自訂和擴展
 
 ## 使用方法
-下載 [zip檔，內有exe執行檔](https://github.com/da0709/Darren-macOSimulator/releases/download/v4.0/Darren-macOSimulator-4.0.exe.zip)
+下載 [exe執行檔](https://github.com/da0709/Darren-macOSimulator/releases/download/v4.0/Darren-macOSimulator-4.0.exe)
