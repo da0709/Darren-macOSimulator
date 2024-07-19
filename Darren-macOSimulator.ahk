@@ -40,8 +40,8 @@ $+CapsLock::
 !c::Send("^c")  ; 將 Alt+C 設置為複製
 !v::Send("^v")  ; 将 Alt+V 设置為貼上
 !d::Send("#d")  ; 將 Alt+D 設置為切換到桌面，此處用 Win+D 實現
-!s::Send("^s")  ; 將 Alt+S 設置為保存
 !f::Send("^f")  ; 將 Alt+F 設置為全域搜尋
+!s::Send("^s")  ; 將 Alt+S 設置為保存
 !m::WinMinimize("A") ; 按下 Alt + M 缩小当前活动窗口
 
 
@@ -49,6 +49,10 @@ $+CapsLock::
 !z::Send("^z")  ; 將 Alt+Z 設置為撤銷操作
 !y::Send("^Y")  ; 將 Alt+Y 設置為下一步操作
 !t::Send("^t")  ; 將 Alt+T 設置為添加新標籤頁
+!+t::Send("^+t")  ; 將 Alt+shift+T 設置為開啟剛剛關閉的標籤頁
+!n::Send("^n")  ; 將 Alt+N 設置為開新視窗
+!+n::Send("^+n")  ; 將 Alt+N 設置為開無痕模式的新視窗
+
 !r::Send("^{F5}")  ; 將 Alt+R 設置為刷新界面
 !l::Send("^l")  ; 將 Alt+L 設置為跳到網址列
 !i::Send("!{Enter}") ; 將 Alt+I 設置為查看內容
@@ -59,24 +63,25 @@ $+CapsLock::
 
 
 
+
 ; 按下 Alt + 向左键，跳至最左（行首）
-!Left::Send("{Home}")  ; 發送 Home 键
+~!Left::Send("{Home}")  ; 發送 Home 键
 
 ; 按下 Alt + 向右键，跳至最右（行尾）
-!Right::Send("{End}")  ; 發送 End 键
+~!Right::Send("{End}")  ; 發送 End 键
 
 
 ; 按下 Shift + Alt + 向左键，發送 Shift + Home
-+!Left::Send("+{Home}")
+~+!Left::Send("+{Home}")
 
 ; 按下 Shift + Alt + 向左键，發送 Shift + Home
-+!Right::Send("+{End}")
+~+!Right::Send("+{End}")
 
 
 ; 按下 Alt + 向上键，跳至最上方
-!Up::Send("^{Home}")
+~!Up::Send("^{Home}")
 ; 按下 Alt + 向下键，跳至最下方
-!Down::Send("^{End}")
+~!Down::Send("^{End}")
 
 ;windows shift 上or下 全選到最上or下面
 !+Up::Send("^+{Home}")
