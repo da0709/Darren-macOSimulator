@@ -15,9 +15,9 @@ $CapsLock::
             SetCapsLockState("Off")
     }
     else {
-        ; 短按，模擬 Shift 鍵單擊(切換語言)
-        Send("{RShift Down}")
-        Send("{RShift Up}")
+        ; 短按，模擬 Alt + Shift 鍵(切換語言)
+        Send("{Alt Down}{Shift Down}")
+        Send("{Alt Up}{Shift Up}")
         SetCapsLockState("Off")
     }
     Return
@@ -61,6 +61,12 @@ $+CapsLock::
 !-::Send("^-")  ; 將 Alt+- 改為ctrl+-，放大縮小
 
 
+
+
+
+
+;按下Alt+shift++，模擬macOS，發送ctrl+shift++，用作在excel中，新增一行
+!+=::Send("^+=")
 
 
 
