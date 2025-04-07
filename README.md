@@ -12,4 +12,4 @@ Darren-macOSimulator is an AutoHotkey script that simulates macOS shortcuts on a
 - Easy to customize and extend
 
 ## Usage
-Download [executable file](https://github.com/da0709/Darren-macOSimulator/releases/download/v5.0/Darren-macOSimulator-5.0.exe)
+Download [executable file](https://github.com/da0709/Darren-macOSimulator/releases/download/v6.0/Darren-macOSimulator-6.0.exe)
